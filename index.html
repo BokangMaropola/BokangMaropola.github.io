@@ -1,0 +1,292 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Things that interest me</title>
+		<link href="Styles/Style.css" type="text/css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<style>
+			/**for testing and strong local edits*/
+		</style>
+		<script src="Script/Script.js"></script>
+		<header>
+				<h1 id="title">Bokang Maropola</h1>
+		</header>
+
+		<div class="imageviewer" id="imageviewer">
+			<span class="closeimageviewer" onclick="closeviewer()">&#9587;</span>
+			<img src="" id="activeimage">
+		</div>
+
+		<div class="nav nav1">
+			<div class="navinput navinput1">
+				<button id="topcbuild" onclick="navgoto('pcbuild'); kickjumper(1)">PC Building</button><br/>
+				<button id="togaming" onclick="navgoto('gaming'); kickjumper(3)">Gaming</button><br/>
+				<button id="tomovies" onclick="navgoto('movies'); kickjumper(5)">Movies</button>
+			</div>
+		</div>
+		<div class="nav nav2">
+			<div class="navinput navinput2">
+				<button id="btnup" onclick="jumpup()"><i class="fa fa-chevron-up"></i><br/><span id="chevup">up</span></button><br/>
+				<button id="fakebtn" onclick="jumptest()"></button><br/>
+				<button id="btndown" onclick="jumpdown()"><span id="chevdown">down</span><br/><i class="fa fa-chevron-down"></i></button>
+			</div>
+		</div>
+
+		<img src="Images/dmode.png" id="dmode" alt="dark mode" onclick="dmode()"/>
+		<img src="Images/MyLogoArt.png" id="mylogo" onclick="qip()">
+		<button id="returntotop" onclick="window.scrollTo(0,0); kickjumper(1)">Return to the Top</button>
+
+		<div class="landing" id="top">
+			<h2>Welcome to my Page</h2>
+			<h3>This page will be about the thing that interest me</h3>
+		</div>
+
+		<div class="mid content" id="content">	
+			<section class="sect" id="pcbuild">
+				<article>
+					<h3 id="myprojects">My Projects</h3>
+					<p>You have to be crafty when you don't have a lot of money. My first PC was a second-hand XP machine which exploded, my second was a Lenovo desktop which was stolen in a break-in.</p>
+					<div class="mypcs">
+						<div class="mypc">
+							<div class="pcpic pcpicdes">
+								<p>
+									My third was a dumpster HP that had been thrown away, I salvaged a bunch of discarded DDR3 DIMMs and I was gifted a secondhand 250 GB hard drive. After assembling my mismatched parts, I tried to power it on and surprisingly it worked…<br/>
+									or a week then it broke,<br/>
+									and I tried to fix it but it exploded in my face (remember kids always unplug the computer while working on it).
+								</p>
+							</div>
+							<div class="pcpic" id="pcpicfix2">
+								<img src="Images/pcbuild/thirdpc.jpg" title="My Salvaged HP" onclick="openimageviewer(src)" alt="A picture of and old ugly gray tower">
+							</div>
+						</div>
+						<div class="mypc">
+							<div class="pcpic" id="pcpicfix1">
+								<img src="Images/pcbuild/fouthpc.jpg" title="Optiplex 9020" onclick="openimageviewer(src)" alt="A picture of the Dell Optiplex9020 SFF">
+							</div>
+							<div class="pcpic pcpicdes">
+								<p>
+									Ol’ Reliable, this baby got me through college. It was slow, old lacked RAM and overheated but it worked.<br/>
+									My new Computer is a bit better.
+								</p>
+							</div>
+						</div>
+					</div>
+					<p> I’ve helped friends build their PCs and as the” IT guy” I have been made to fix/upgrade a few machines here and there.</p>
+				</article>
+				<article>
+					<h3 id="myresearch">My Research</h3>
+					<p>I don't usually read or search for my research instead I watch YouTube content based on my interest. Some of the YouTubers I follow are quite well-known, but I also like a few who are obscure.</p>
+					<div class="contentcreators">
+						<div class="ccandco">
+							<div class="co"><img src="Images/pcbuild/Brett.jpg" title="Brett from UFD" onclick="openimageviewer(src)" alt="A photo of Brett from UFD"></div>
+							<div class="co"><img src="Images/pcbuild/ufdlogo.jpg" title="UFD logo" onclick="openimageviewer(src)" alt="A picture of the UFD logo"></div>
+							<div class="co codes">
+								<p>
+									Another YouTuber who releases videos every day, every morning I watch one of their videos and hear about all the tech news happening in the world.<br/>
+									Brett's friendship with Reece is also a big reason I watch them have such a good dynamic together.
+								</p>
+							</div>
+						</div>
+						<div class="ccandco ccandcofix">
+							<div class="co"><img src="Images/pcbuild/Linus.jpg" title="Linus from LMG" onclick="openimageviewer(src)" alt="A photo of Linus from LMG"></div>
+							<div class="co"><img src="Images/pcbuild/LTT_Logo.png" title="LTT logo" onclick="openimageviewer(src)" alt="A picture of the LTT logo"></div>
+							<div class="co codes">
+								<p>
+									This is one of the most popular tech YouTubers.<br/>
+									I like Linus' tendency to do crazy projects. Completely impractical and overpriced but I find it unbelievably fun to see what's possible.
+								</p>
+							</div>
+						</div>
+						
+						<div class="ccandco ccandcofix">
+							<div class="co"><img src="Images/pcbuild/Riley.jpg" title="Riley from Techlinked" onclick="openimageviewer(src)" alt="A photo of Riley from Techlinked"></div>
+							<div class="co"><img src="Images/pcbuild/tlogo.jpg" title="Techlinked logo" onclick="openimageviewer(src)" alt="A picture of the Techlinked logo"></div>
+							<div class="co codes">
+								<p>
+									In the world of tech, things happen fast and new releases are every day, it is far too easy to miss something cool.<br/>
+									TechLinked releases new videos every day, Quickly delivering tech news with humour and wit.<br/>
+									Everything big and small has a chance to show up in my feed.
+								</p>
+							</div>
+						</div>
+						<div class="ccandco ccandcofix">
+							<div class="co"><img src="Images/pcbuild/Steve.png" title="Steve from Gamer's Nexus" onclick="openimageviewer(src)" alt="A photo od Steve from Gamer's Nexus"></div>
+							<div class="co"><img src="Images/pcbuild/gnlogo.jpg" title="Gamer's Nexus logo" onclick="openimageviewer(src)" alt="A picture of the Gamer's Nexus logo"></div>
+							<div class="co codes">
+								<p>
+								I am a data-driven person, I do understand how some people might find Gamers Nexus content boring or draining but I for one enjoy their videos.<br/>
+								They provide tons of data some that is relevant to me some that even enthusiasts might struggle to understand.<br/>
+								Steve has a lot of integrity and doesn't hold back data or his opinion.
+								</p>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<section class="sect" id="gaming">
+				<article id="play">
+					<h3>What I Play</h3>
+					<p>My biggest preference is single-player RPGs like Fallout, Skyrim and The Witcher. I also like strategy games like Stellaris and Crusader Kings.</p>
+					<div class="gbanner">
+						<div class="bannerpair">
+							<div class="banner"><img src="Images/gaming/fallout.jpg" title="Fallout 4" onclick="openimageviewer(src)" alt=" steam banner for Fallout 4"></div>
+							<div class="bannerdes">Fallout 4</div>
+						</div>
+						<div class="bannerpair">
+							<div class="banner"><img src="Images/gaming/skyrim.jpg" title="Skyrim" onclick="openimageviewer(src)" alt=" steam banner for Skyrim"></div>
+							<div class="bannerdes">Skyrim</div>
+						</div>
+						<div class="bannerpair">
+							<div class="banner"><img src="Images/gaming/witcher.jpg" title="The Witcher 3" onclick="openimageviewer(src)" alt=" steam banner for The Witcher 3"></div>
+							<div class="bannerdes">The Witcher 3</div>
+						</div>
+						<div class="bannerpair">
+							<div class="banner"><img src="Images/gaming/stellaris.jpg" title="Stellaris" onclick="openimageviewer(src)" alt="a steam banner for Stellaris"></div>
+							<div class="bannerdes">Stellaris</div>
+						</div>
+					</div>
+					<p>One of the things I like about these types of games is the ability to make-believe. I'm not the most imaginative person so I enjoy the temporary detachment from reality.</p>
+				</article>
+				<article>
+					<h3 id="mod">Modding</h3>
+					<p>I once talked to a friend of mine and told him that my Skyrim is not like your Skyrim. He was playing Skyrim on the PlayStation 4 and I was playing on the Xbox One. The gall of me, to believe that my game had changed so drastically.</p>
+					<h4>There's a mod for that</h4>
+					<p>Now I play on PC where there are no limits.</p>
+					<div class="theresamod4that">
+						<div class="mod4that">
+							<div class="mod4thatimg" id="picborderfix1"><img src="Images/gaming/mod4that1.jpeg" title="Macho dragons" onclick="openimageviewer(src)" alt="Macho dragons"></div>
+							<div class="mod4thatdescrip">
+								<p>If you want to turn dragons into your favourite wrestler.</p>
+								<p>There's a mod for that.</p>
+							</div>
+						</div>
+						<div class="mod4that">
+							<div class="mod4thatimg" id="picborderfix1 picborderfix2" ><img src="Images/gaming/mod4that2.jpeg" title="Daughter of the Sea Armour" onclick="openimageviewer(src)" alt="Daughter of the Sea Armour"></div>
+							<div class="mod4thatdescrip">
+								<p>Do you wish women were more jiggly.</p>
+								<p>There's a mod for that.</p>
+							</div>
+						</div>
+						<div class="mod4that">
+							<div class="mod4thatimg" id="picborderfix2"><img src="Images/gaming/mod4that3.jpeg" title="Minecraft Weapon Pack" onclick="openimageviewer(src)" alt="Minecraft special edition"></div>
+							<div class="mod4thatdescrip">
+								<p>Do you wish you were playing a different game, well you could play a different game.</p>
+								<p>...or there's a mod for that.</p>
+							</div>
+						</div>
+					</div>
+					<p>Fortunately or unfortunately depending on your opinion on the matter, my games usually remain more tame and faithful to the developer's vision.</p>
+					<h4>What my game looks like</h4>
+					<div class="ba" id="ba1">
+						<div class="imgs b1" id="picborderfix1">
+							<img src="Images/gaming/b1.png" title="Vanilla Lydia in Whiterun" onclick="openimageviewer(src)" alt="Lydia in Whiterun">
+							<span class="tags" id="btag">Before</span>
+						</div>
+						<div class="imgs a1" id="picborderfix2">
+							<img src="Images/gaming/a1.png" title="Bijin Lydia in JK's Whiterun" onclick="openimageviewer(src)" alt="Lydia in Whiterun modded">
+							<span class="tags" id="atag">After</span>
+						</div>
+					</div>
+					<div class="ba" id="ba2" id="picborderfix1">
+						<div class="imgs b2">
+							<img src="Images/gaming/b2.png" title="Vanilla Whiterun market" onclick="openimageviewer(src)" alt="Whiterun market">
+							<span class="tags" id="btag">Before</span>
+						</div>
+						<div class="imgs a2" id="picborderfix2">
+							<img src="Images/gaming/a2.png" title="JK's Whiterun market" onclick="openimageviewer(src)" alt="Whiterun market modded">
+							<span class="tags" id="atag">After</span>
+						</div>
+					</div>
+					<p>
+						My CK2 Mod<br/>
+						The first time I created my own mod was in 2019, at the time I was playing Crusader Kings 2 and I decided to make it easier to cheat. Using a different mod I was able to read how bloodlines are created and then I created my own bloodlines mod. It took a lot of trial and error and usually didn't work but eventually, I had something I could use.
+					</p>
+					<p>
+						My Skyrim mod<br/>
+						In August 2023, I was frustrated because I couldn't find a patch that made two of my favourite mods work better together (Improved follower dialogue -Lydia and Bijin Warmaidens). Since I didn't want to get up either mod instead spent two days learning how to open ba files I learnt how to use x edit and how to use sseedit and created the IFD Lydia patch, two months after I made that patch the creator of ID created a similar page and killed my mod, kinda?<br/>
+						<a href="https://www.nexusmods.com/skyrimspecialedition/mods/92257/?tab=description">Check it out here</a>
+					</p>
+				</article>
+			</section>
+			<section class="sect" id="movies">
+				<article>
+					<h3 id="preferances">Movies I Like</h3>
+					<div class="mbanner">
+						<div class="bannerpair">
+							<div class="banner"><img src="Images/movies/chappie.jpg" title="Chappie" onclick="openimageviewer(src)" alt="A poster fot the Movie: Chappie"></div>
+							<div class="bannerdes">Chappie</div>
+						</div>
+						<div class="bannerpair">
+							<div class="banner"><img src="Images/movies/El hoyo.jpg" title="El Hoyo" onclick="openimageviewer(src)" alt="A poster fot the Movie: El Hoyo"></div>
+							<div class="bannerdes">El Hoyo</div>
+						</div>
+						<div class="bannerpair">
+							<div class="banner"><img src="Images/movies/projectalmanac.jpg" title="project Almanac" onclick="openimageviewer(src)" alt="A poster fot the Movie: Project Almanac"></div>
+							<div class="bannerdes">Project Almanac</div>
+						</div>
+						<div class="bannerpair">
+							<div class="banner"><img src="Images/movies/rushhour.jpg" title="Rush Hour" onclick="openimageviewer(src)" alt="A poster fot the Movie: Rush Hour"></div>
+							<div class="bannerdes">Rush Hour</div>
+						</div>
+						<div class="bannerpair">
+							<div class="banner"><img src="Images/movies/shawshank.jpg" title="The Shawshank Redemption" onclick="openimageviewer(src)" alt="A poster fot the Movie: The Shawshank Redemption"></div>
+							<div class="bannerdes">The Shawshank Redemption</div>
+						</div>
+						<div class="bannerpair">
+							<div class="banner"><img src="Images/movies/badboys.jpg" title="Bad Boys 2" onclick="openimageviewer(src)" alt="A poster fot the Movie: Bad Boys 2"></div>
+							<div class="bannerdes">Bad Boys 2</div>
+						</div>
+					</div>
+					<p>
+						I like all types of movies even though I don’t always have time to watch them. I prefer action and comedy but more than anything I like spectacle and cinematography. A good movie has excellent world-building and character work. If I had to recommend a movie I would suggest the indie movie El Hoyo aka the platform and my all-time favourite movie….
+					</p>
+				</article>
+				<article>
+					<h3 id="favouritemovie">The World's End</h3>
+					<p>This is my favourite movie, It is hilarious. The cinematography, storytelling, message and humour are on point even though it's 10 years old now the jokes and visuals have not aged.</p>
+					<div class="characters">
+						<div class="character">
+							<div class="posters"><img src="Images/movies/The-Worlds-End-Martin-Freeman.jpg" title="A movie poster of Rosamund Pike ans Sam Chamberlain" onclick="openimageviewer(src) " alt="A movie poster of Martin Freeman as Oliver Chamberlain"></div>
+							<div class="charactername">Oliver Chamberlain</div>
+						</div>
+						<div class="character">
+							<div class="posters"><img src="Images/movies/The-Worlds-End-Paddy-Considine.jpg" title="A movie poster of Rosamund Pike ans Sam Chamberlain" onclick="openimageviewer(src)" alt="A movie poster of Paddy Considine as Steven Prince"></div>
+							<div class="charactername">Steven Prince</div>
+						</div>
+						<div class="character">
+							<div class="posters"><img src="Images/movies/The-Worlds-End-Simon-Pegg.jpg" title="A movie poster of Rosamund Pike ans Sam Chamberlain" onclick="openimageviewer(src)" alt="A movie poster of Simon Pegg as Gary King"></div>
+							<div class="charactername">Gary King</div>
+						</div>
+						<div class="character">
+							<div class="posters"><img src="Images/movies/The-Worlds-End-Nick-Frost.jpg" title="A movie poster of Rosamund Pike ans Sam Chamberlain" onclick="openimageviewer(src)" alt="A movie poster of Nick Frost as Andy Knightley"></div>
+							<div class="charactername">Andy Knightley</div>
+						</div>
+						<div class="character">
+							<div class="posters"><img src="Images/movies/The-Worlds-End-Eddie-Marsan.jpg" title="A movie poster of Rosamund Pike ans Sam Chamberlain" onclick="openimageviewer(src)" alt="A movie poster of Eddie Marson as Peter Page"></div>
+							<div class="charactername">Peter Page</div>
+						</div>
+						<div class="character">
+							<div class="posters"><img src="Images/movies/The-Worlds-End-Rosamund-Pike.jpg" title="A movie poster of Rosamund Pike ans Sam Chamberlain" onclick="openimageviewer(src)" alt="A movie poster of Rosamund Pike ans Sam Chamberlain"></div>
+							<div class="charactername">Sam Chamberlain</div>
+						</div>
+					</div>
+					<p>The main cast standing order is the acronym OSGAP</p>
+					<p>In the film, five friends return to their hometown to reattempt a pub crawl they failed twenty-three years earlier, only to discover the town is in the midst of an alien invasion</p>
+					<span class="aligntrailer">
+						<iframe id="movietrailer" src="https://www.youtube.com/embed/n__1Y-N5tQk?si=XgwOl4ij1ESVksnm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</span>
+				</article>
+			</section>
+		</div>
+		<footer>
+			<p>This webpage was made by Bokang Maropola.</p>
+			<p>No part of this project was plagerised | This was made using VS Code IDE and notepad++</p>
+		</footer>
+	</body>
+</html>
