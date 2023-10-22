@@ -134,6 +134,13 @@ function jumpdown(){
 }
 
 function openimageviewer(imagetoview){
+    let imagewidth = imagetoview.naturalWidth;
+    let imageheight = imagetoview.naturalHeight;
+    if (imagewidth >= imageheight){
+        document.getElementById("activeimage").style.minWidth = "80%";
+    }else{
+        document.getElementById('activeimage').style.minHeight = "80%";
+    }
     let opener = document.getElementById('imageviewer');
     opener.style.display = "block";
     document.getElementById('activeimage').src = imagetoview;
